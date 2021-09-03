@@ -19,7 +19,6 @@ const displayTemp = (data)=>{
     setInnerText('temp',data.main.temp);
     setInnerText('condition',data.weather[0].main);
     const url = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-    console.log(data);
     const imageIcon = document.getElementById('weather-icon');
     imageIcon.setAttribute('src',url);
 }
